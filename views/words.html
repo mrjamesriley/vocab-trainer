@@ -1,0 +1,21 @@
+<h2>Words</h2>
+
+<table class="table table-striped" style="width: 740px">
+  <thead>
+    <tr>
+      <th width="100"><a ng-click="sortWords('word')">Word</a></th>
+      <th width="400"><a ng-click="sortWords('definition')">Definition</a></th>
+      <th width="140">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="word in words | orderBy:sortProperty:sortReverse">
+      <td><a href="#/words/{{ word.word }}">{{ word.word }}</a></td>
+      <td>{{ word.definition }}</td>
+      <td>
+        <button ng-click="editWord(word)" class="btn btn-default" >Edit</button>
+        <button ng-click="trashWord(word)" class="btn btn-default">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

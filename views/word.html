@@ -1,0 +1,16 @@
+<h2>Editing word: {{ word.word }}</h2>
+
+<table>
+  <tr>
+    <td valign="top">Word</td>
+    <td><input class="form-control" type="text" ng-model="word.word" /></td>
+  </tr>
+  <tr>
+    <td valign="top">Definition</td>
+    <td><textarea class="form-control" rows="5" ng-model="word.definition"></textarea></td>
+  </tr>
+</table>
+
+<br />
+<br />
+<a href="#/"><button class="btn btn-default">Back to words list</button></a>

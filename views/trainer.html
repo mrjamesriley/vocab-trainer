@@ -1,0 +1,16 @@
+<div style="min-height: 300px">
+  <p>What is the definition of...</p>
+
+  <h2>{{ word.word }}</h2>
+  <p><em>{{ word.type }}</em></p>
+
+  <p ng-show="displayAnswer">{{ word.definition }}</p>
+</div>
+
+<div ng-show="displayAnswer">
+  <button ng-click="proceed()" class="btn btn-success">Next Word</button>
+</div>
+
+<div ng-hide="displayAnswer">
+  <button ng-click="seeAnswer()" class="btn btn-info">See Answer</button>
+</div>
