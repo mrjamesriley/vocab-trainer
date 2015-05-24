@@ -54,9 +54,19 @@ app.controller('TrainerController', function($scope, Vocab) {
     $scope.displayAnswer = true;
   }
 
-  $scope.proceed = function() {
+  var proceedToNextWord = function() {
     $scope.word = Vocab.nextWord();
     $scope.displayAnswer = false;
+  }
+
+  $scope.soon = function(word) {
+    Vocab.markForSoon(word);
+    proceedToNextWord();
+  }
+
+  $scope.later = function(word) {
+    Vocab.markForLater(word);
+    proceedToNextWord();
   }
 });
 

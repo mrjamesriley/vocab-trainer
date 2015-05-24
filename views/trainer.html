@@ -8,7 +8,10 @@
 </div>
 
 <div ng-show="displayAnswer">
-  <button ng-click="proceed()" class="btn btn-success">Next Word</button>
+  <p>When do you want to see this word again?
+  <br />
+  <button ng-click="soon(word)" class="btn btn-success">Soon</button>
+  <button ng-click="later(word)" class="btn btn-success">Later</button>
 </div>
 
 <div ng-hide="displayAnswer">
