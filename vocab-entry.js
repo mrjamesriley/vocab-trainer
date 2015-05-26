@@ -1,5 +1,5 @@
 require("./bower_components/bootstrap/dist/css/bootstrap.css");
-require("./css/style.css");
+require("./css/style.sass");
 
 require('./bower_components/angular/angular.js');
 require('./bower_components/angular-route/angular-route.js');
