@@ -32,6 +32,7 @@ app.controller('ShellController', function($scope) {
 app.controller('MainController', function($scope, Vocab, $location) {
   $scope.$emit('loadedController', 'words');
 
+
   $scope.words = Vocab.words();
   $scope.trashWord = function(word) { Vocab.trashWord(word); }
   $scope.editWord = function(word) { $location.path("/words/" + word.word) }

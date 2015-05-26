@@ -1,7 +1,8 @@
 # Vocabulary Trainer
 
+
 Experimental AngularJS application for an Anki-inspired vocabularly trainer.  
-Uses: Angular 1.3, Bootstrap 3 and Lo-dash.
+Uses: Webpack, Angular 1.3, Bootstrap 3 and Lo-dash.
 
 ![Vocab Trainer Screenshot](http://i.imgur.com/nbhZ1er.png)
 
